@@ -6,7 +6,7 @@
 
 homekit_value_t HOMEKIT_DEFAULT_CPP() {
 	homekit_value_t homekit_value;
-	//homekit_value.is_null = false;//该值为默认，不用设置
+	homekit_value.is_null = false;//该值为默认，不用设置
 	return homekit_value;
 }
 
