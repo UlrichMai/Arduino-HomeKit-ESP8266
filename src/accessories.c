@@ -13,8 +13,11 @@ bool homekit_value_equal(homekit_value_t *a, homekit_value_t *b) {
         case homekit_format_bool:
             return a->bool_value == b->bool_value;
         case homekit_format_uint8:
+            return a->uint8_value == b->uint8_value;
         case homekit_format_uint16:
+            return a->uint16_value == b->uint16_value;
         case homekit_format_uint32:
+            return a->uint32_value == b->uint32_value;
         case homekit_format_uint64:
         case homekit_format_int:
             return a->int_value == b->int_value;
