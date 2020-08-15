@@ -3595,6 +3595,10 @@ void arduino_homekit_loop() {
 	}
 }
 
+bool arduino_homekit_is_paired() {
+	return (running_server != nullptr && running_server->paired); 
+}
+
 int arduino_homekit_connected_clients_count() {
 	if (running_server) {
 		return running_server->nfds;
